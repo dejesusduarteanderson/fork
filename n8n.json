@@ -1,5 +1,5 @@
 {
-  "name": "WHATSAPP + n8n",
+  "name": "cass.ia",
   "nodes": [
     {
       "parameters": {
@@ -11,14 +11,14 @@
       "type": "n8n-nodes-base.redis",
       "typeVersion": 1,
       "position": [
-        320,
-        260
+        340,
+        300
       ],
-      "id": "9e0bed45-7c95-4270-bc69-c6f8351d3bea",
+      "id": "4a87761a-9593-4557-92ea-e600594e7a4d",
       "credentials": {
         "redis": {
-          "id": "L4TppiL5e4Ue1opW",
-          "name": "Redis Interno"
+          "id": "n24hl3tD2xCZuUk7",
+          "name": "Redis account"
         }
       }
     },
@@ -36,13 +36,13 @@
         },
         "options": {}
       },
-      "id": "c3dddbb1-4215-4028-b767-7b445e1a9cf7",
+      "id": "5f89a95e-009e-4d71-830e-36b60d97f0f0",
       "name": "SET DEFAULT MESSAGE",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        1360,
-        260
+        1380,
+        300
       ]
     },
     {
@@ -59,13 +59,13 @@
         },
         "options": {}
       },
-      "id": "10602b9d-e95c-4f80-992a-7802fff46a14",
+      "id": "e5f272ef-e6da-444d-8296-1aab898bc9e4",
       "name": "SET REPLIED MESSAGE",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        1360,
-        420
+        1380,
+        460
       ]
     },
     {
@@ -82,13 +82,13 @@
         },
         "options": {}
       },
-      "id": "71692831-99fd-4770-bfe6-5343353b60bd",
+      "id": "c9f09e18-5ad7-4ec8-9e1e-24d6858dc1ec",
       "name": "SET EDITED MESSAGE",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        1360,
-        580
+        1380,
+        620
       ]
     },
     {
@@ -102,10 +102,10 @@
       "type": "n8n-nodes-base.convertToFile",
       "typeVersion": 1.1,
       "position": [
-        940,
-        740
+        960,
+        780
       ],
-      "id": "8a4c7b57-12ec-48e9-a7d7-fe356c91c063",
+      "id": "922da6b4-c6e2-4574-806f-b5db85cb631e",
       "name": "CONVERT TO MP3"
     },
     {
@@ -115,20 +115,20 @@
             {
               "id": "35fa457c-66ec-469e-bcff-e138580a8137",
               "name": "MESSAGE",
-              "value": "=Transcrição do Áudio enviado pelo usuário: {{ $json.text }}",
+              "value": "={{ $json.text }}",
               "type": "string"
             }
           ]
         },
         "options": {}
       },
-      "id": "568e3bec-19c7-4397-a525-ffd80a07c1f9",
+      "id": "fcb05548-6198-4015-a2ef-f8caa82b5c92",
       "name": "SET AUDIO MESSAGE",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        1360,
-        740
+        1380,
+        780
       ]
     },
     {
@@ -143,10 +143,10 @@
       "type": "n8n-nodes-base.convertToFile",
       "typeVersion": 1.1,
       "position": [
-        940,
-        900
+        960,
+        940
       ],
-      "id": "ae87eea1-31ce-4471-a533-031bdf6dbb27",
+      "id": "341166f6-dc9f-4393-bd53-e29a1f2f0236",
       "name": "CONVERT TO JPG"
     },
     {
@@ -163,13 +163,13 @@
         },
         "options": {}
       },
-      "id": "d21ce02e-8926-4dc4-b382-b15ed69f266f",
+      "id": "8931789e-0092-4fa4-bfc1-15f50f7a3d35",
       "name": "SET AUDIO BASE64",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        720,
-        740
+        740,
+        780
       ]
     },
     {
@@ -186,13 +186,13 @@
         },
         "options": {}
       },
-      "id": "00321e27-a7ab-4dc7-a3f2-ce5fd1bf9e15",
+      "id": "908b0547-284f-48d0-9682-ea97c05e27ae",
       "name": "SET IMAGE BASE64",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        720,
-        900
+        740,
+        940
       ]
     },
     {
@@ -202,20 +202,20 @@
             {
               "id": "35fa457c-66ec-469e-bcff-e138580a8137",
               "name": "MESSAGE",
-              "value": "=Transcrição do Áudio enviado pelo usuário: {{ $json.text }}",
+              "value": "=Transcrição da imagem enviado pelo usuário: {{ $json.content }}",
               "type": "string"
             }
           ]
         },
         "options": {}
       },
-      "id": "b310d197-bec1-40fc-8915-0da68a03ca8d",
+      "id": "0a5e8716-e5a5-44a9-9e68-94914c30377d",
       "name": "SET IMAGE MESSAGE",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        1360,
-        900
+        1380,
+        940
       ]
     },
     {
@@ -229,14 +229,14 @@
       "type": "n8n-nodes-base.redis",
       "typeVersion": 1,
       "position": [
-        1920,
-        240
+        1940,
+        280
       ],
-      "id": "cfe6cbab-ff9c-4cdf-a7ec-02d3b51d9b64",
+      "id": "2d7760e3-3c0b-458e-99cc-6340b290422d",
       "credentials": {
         "redis": {
-          "id": "L4TppiL5e4Ue1opW",
-          "name": "Redis Interno"
+          "id": "n24hl3tD2xCZuUk7",
+          "name": "Redis account"
         }
       }
     },
@@ -249,14 +249,14 @@
       "type": "n8n-nodes-base.redis",
       "typeVersion": 1,
       "position": [
-        2120,
-        240
+        2140,
+        280
       ],
-      "id": "eb43fac3-eac1-43a9-b6e4-c4782ba6d7a6",
+      "id": "ddf766dd-0669-4eb7-b072-791a88df1864",
       "credentials": {
         "redis": {
-          "id": "L4TppiL5e4Ue1opW",
-          "name": "Redis Interno"
+          "id": "n24hl3tD2xCZuUk7",
+          "name": "Redis account"
         }
       }
     },
@@ -268,15 +268,15 @@
       "type": "n8n-nodes-base.redis",
       "typeVersion": 1,
       "position": [
-        2560,
-        240
+        2580,
+        280
       ],
-      "id": "aeb91b02-7840-44a0-9051-da742be4678e",
+      "id": "4c96b42c-95b0-4561-bfe3-baf452b69f7b",
       "name": "GET TIMEOUT",
       "credentials": {
         "redis": {
-          "id": "L4TppiL5e4Ue1opW",
-          "name": "Redis Interno"
+          "id": "n24hl3tD2xCZuUk7",
+          "name": "Redis account"
         }
       }
     },
@@ -287,10 +287,10 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        2340,
-        240
+        2360,
+        280
       ],
-      "id": "a5831909-4a0b-4c7c-a1e5-161e7190f130",
+      "id": "65dd4840-8ce2-4ef4-807c-403c6f745450",
       "name": "TIMEOUT",
       "webhookId": "43deaaad-faa9-4ade-a67b-62ccd56e4e54"
     },
@@ -321,10 +321,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        2780,
-        240
+        2800,
+        280
       ],
-      "id": "c4cc154e-02ad-44c9-9b68-fae0f29b0987",
+      "id": "10aae0af-5d48-4cf4-97d2-622f68f34c0a",
       "name": "If"
     },
     {
@@ -355,10 +355,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -540,
-        260
+        -520,
+        300
       ],
-      "id": "cb0c3cd4-a3fc-49f5-9848-46b33cd172fe",
+      "id": "81342f1c-c8f5-416f-af18-dd4e2658966a",
       "name": "If1"
     },
     {
@@ -371,14 +371,14 @@
       "type": "n8n-nodes-base.redis",
       "typeVersion": 1,
       "position": [
-        -380,
-        120
+        -360,
+        160
       ],
-      "id": "b0c0c2c9-9795-4964-9774-f78915d6d9ff",
+      "id": "ae675deb-a2bc-4979-965e-e7f542de45b3",
       "credentials": {
         "redis": {
-          "id": "L4TppiL5e4Ue1opW",
-          "name": "Redis Interno"
+          "id": "n24hl3tD2xCZuUk7",
+          "name": "Redis account"
         }
       }
     },
@@ -390,16 +390,16 @@
       "type": "n8n-nodes-base.redis",
       "typeVersion": 1,
       "position": [
-        -380,
-        280
+        -360,
+        320
       ],
-      "id": "57ba83c3-1c49-482b-ad06-d6c5c5cdf9f3",
+      "id": "a7ddbd3b-5098-4b3c-b31a-081a6a5ef405",
       "name": "GET TIMEOUT1",
       "alwaysOutputData": true,
       "credentials": {
         "redis": {
-          "id": "L4TppiL5e4Ue1opW",
-          "name": "Redis Interno"
+          "id": "n24hl3tD2xCZuUk7",
+          "name": "Redis account"
         }
       }
     },
@@ -430,10 +430,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        20,
-        360
+        40,
+        400
       ],
-      "id": "c71748ad-6727-4612-b3a4-7b348dab0ba0",
+      "id": "4d288c82-7d84-4cdf-8671-7ec553c3b54c",
       "name": "If2"
     },
     {
@@ -464,10 +464,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -200,
-        280
+        -180,
+        320
       ],
-      "id": "d6b65676-4361-4229-9be3-eab76f1a9ef2",
+      "id": "7dc7d4c7-75d9-42eb-bd48-3feba3989366",
       "name": "If3"
     },
     {
@@ -476,13 +476,13 @@
         "path": "4a826df4-1f5a-4c29-97eb-0879c751c681",
         "options": {}
       },
-      "id": "7271adc3-bad3-4474-93aa-23d46bf81994",
+      "id": "931a8d5e-87a9-4916-9403-462b06fd5262",
       "name": "Webhook",
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2,
       "position": [
-        -1220,
-        260
+        -1200,
+        300
       ],
       "webhookId": "4a826df4-1f5a-4c29-97eb-0879c751c681"
     },
@@ -490,17 +490,17 @@
       "parameters": {
         "options": {}
       },
-      "id": "53dcfd69-189f-436a-8030-0ac76fff9e66",
+      "id": "91bd6be9-16a4-4c44-8864-97a5886bab02",
       "name": "OpenAI Chat Model",
       "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
       "typeVersion": 1,
       "position": [
-        3100,
-        580
+        3120,
+        620
       ],
       "credentials": {
         "openAiApi": {
-          "id": "cQa2Nul0fPM2CCvw",
+          "id": "qD7Xp9TnApdQtBCg",
           "name": "OpenAi account"
         }
       }
@@ -636,13 +636,13 @@
         },
         "options": {}
       },
-      "id": "08872854-ff73-47d8-9a87-21995cffcbd5",
+      "id": "0eb9f780-567f-43aa-a51c-c038b6cc31b2",
       "name": "Tipo da Mensagem",
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3,
       "position": [
-        580,
-        260
+        600,
+        300
       ]
     },
     {
@@ -659,17 +659,17 @@
         "inputType": "base64",
         "options": {}
       },
-      "id": "b583ddf4-f24e-49a9-a240-bf4129153d95",
+      "id": "79e92c66-7499-4f4a-8cec-c94fe0614989",
       "name": "OpenAI1",
       "type": "@n8n/n8n-nodes-langchain.openAi",
       "typeVersion": 1.7,
       "position": [
-        1160,
-        900
+        1180,
+        940
       ],
       "credentials": {
         "openAiApi": {
-          "id": "cQa2Nul0fPM2CCvw",
+          "id": "qD7Xp9TnApdQtBCg",
           "name": "OpenAi account"
         }
       }
@@ -680,17 +680,17 @@
         "operation": "transcribe",
         "options": {}
       },
-      "id": "cef7b67f-e723-4a08-ac11-b80aed4975ed",
+      "id": "b4cb4313-a235-4bad-8eee-424f6ada6c17",
       "name": "OpenAI",
       "type": "@n8n/n8n-nodes-langchain.openAi",
       "typeVersion": 1.7,
       "position": [
-        1160,
-        740
+        1180,
+        780
       ],
       "credentials": {
         "openAiApi": {
-          "id": "cQa2Nul0fPM2CCvw",
+          "id": "qD7Xp9TnApdQtBCg",
           "name": "OpenAi account"
         }
       }
@@ -700,63 +700,43 @@
         "promptType": "define",
         "text": "={{ $('RETRIEVE LAST MESSAGES').item.json.values().flat().join(`\n`) }}",
         "options": {
-          "systemMessage": "PROMPT AQUI"
+          "systemMessage": "Você é um assistente virtual da empresa de Terapia TRG(Terapia de Reprocessamento Generativo). Seu papel é fornecer suporte aos clientes, responder perguntas relacionadas aos serviços de terapia.\n\nQuando o cliente quiser o link para o agendamento de consulta é https://calendly.com/dejesusduarteanderson/30min\n"
         }
       },
-      "id": "5c01433c-b1d5-4a08-b4e5-67bdff3ace38",
+      "id": "94c8d4e1-e73b-482e-938d-7b75b8c550c3",
       "name": "AI Agent",
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.7,
       "position": [
-        3220,
-        220
+        3240,
+        260
       ]
-    },
-    {
-      "parameters": {
-        "sessionIdType": "customKey",
-        "sessionKey": "=Messages.{{ $json?.id || 'test' }}.{{ $('Webhook').item.json.body.data.key.remoteJid }}"
-      },
-      "id": "e2e0e145-fd47-4ef8-aa7d-635b09c9b996",
-      "name": "Postgres Chat Memory",
-      "type": "@n8n/n8n-nodes-langchain.memoryPostgresChat",
-      "typeVersion": 1.3,
-      "position": [
-        3300,
-        580
-      ],
-      "credentials": {
-        "postgres": {
-          "id": "rXmnWqLC2TvNRVVB",
-          "name": "Postgres account"
-        }
-      }
     },
     {
       "parameters": {
         "fieldToSplitOut": "messages",
         "options": {}
       },
-      "id": "50e74106-ac06-4a00-a8d9-c7bacf20f435",
+      "id": "81c8f2b7-0c79-431c-8960-45dc4753f7ea",
       "name": "Split Out",
       "type": "n8n-nodes-base.splitOut",
       "typeVersion": 1,
       "position": [
-        3840,
-        220
+        3860,
+        260
       ]
     },
     {
       "parameters": {
         "options": {}
       },
-      "id": "e6e7a4b5-c639-4513-b8fb-bc8dba581e14",
+      "id": "5640a3f7-1888-4b2b-93da-ec825ee7326c",
       "name": "Loop Over Items",
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 3,
       "position": [
-        4220,
-        220
+        4240,
+        260
       ]
     },
     {
@@ -799,13 +779,13 @@
         },
         "options": {}
       },
-      "id": "137592b4-237e-4275-972f-ae297761a9b6",
+      "id": "9d764e2f-b8b8-4246-ba6d-da177424b711",
       "name": "SEND TEXT",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        5080,
-        620
+        5100,
+        660
       ],
       "retryOnFail": false,
       "maxTries": 5,
@@ -829,13 +809,13 @@
         "jsonBody": "={\n  \"number\": \"{{ $('Webhook').item.json.body.data.key.remoteJid }}\",\n  \"mediatype\": \"image\",\n  \"media\": \"{{ $json.messages.match(/https:\\/\\/[^\\s]+?\\.(jpeg|jpg|png|webp)/)[0] }}\"\n}",
         "options": {}
       },
-      "id": "f7125b89-7d89-42d5-bbe8-bf8b56cff27a",
+      "id": "0fa2d3a5-8fb7-411f-a145-968325186cb2",
       "name": "SEND IMAGE",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        5080,
-        340
+        5100,
+        380
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -859,13 +839,13 @@
         "jsonBody": "={\n  \"number\": \"{{ $('Webhook').item.json.body.data.key.remoteJid }}\",\n  \"mediatype\": \"video\",\n  \"media\": \"{{ $json.messages.match(/https:\\/\\/[^\\s]+?\\.(wmv|mp4|mov|mkv)/)[0] }}\"\n}",
         "options": {}
       },
-      "id": "95e26168-56f4-4205-a84e-4dd83fad2950",
+      "id": "f3ab24b3-8242-45b8-ba11-0a958b23d671",
       "name": "SEND VIDEO",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        5080,
-        480
+        5100,
+        520
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -978,13 +958,13 @@
         },
         "options": {}
       },
-      "id": "82039d90-4731-4dc4-9f85-997d6fd01b63",
+      "id": "ec0ada7c-b388-4fff-adfb-0cde5210b7d5",
       "name": "Switch",
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3,
       "position": [
-        4500,
-        220
+        4520,
+        260
       ]
     },
     {
@@ -1000,7 +980,7 @@
             {
               "id": "24d3b8c3-c8c4-4bee-9876-db1f82cb5dfb",
               "name": "EVOLUTION-API-KEY",
-              "value": "wapi_ASaZKFqkQ8oNc0uPvXF4OrxyYoekLrmw5QhIOYf57AY9GdysxnJpu3hMNbVDQvO77q14mbXCx8b2KkJQ3C34whrnSqV8nrvkNYC8rwdtFb4hKp5kNWNqo0B2ckV",
+              "value": "90D8B642E7A1-4447-A9FA-8CB1D64283DB",
               "type": "string"
             },
             {
@@ -1022,10 +1002,10 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        -940,
-        260
+        -920,
+        300
       ],
-      "id": "8df8f643-1e70-41fe-aaa4-a4dac3fd1f39",
+      "id": "e5b7e3b4-769b-4462-bbc9-c5b9dbfd8a4a",
       "name": "ALTERE ISSO"
     },
     {
@@ -1036,15 +1016,15 @@
       "type": "n8n-nodes-base.redis",
       "typeVersion": 1,
       "position": [
-        4980,
-        180
+        5000,
+        220
       ],
-      "id": "78cb0a1d-0e70-47f4-b4a6-d97e374c95f4",
+      "id": "4aad1152-5d2b-47c3-8c21-a7449ec51026",
       "name": "DELETE HISTORY",
       "credentials": {
         "redis": {
-          "id": "L4TppiL5e4Ue1opW",
-          "name": "Redis Interno"
+          "id": "n24hl3tD2xCZuUk7",
+          "name": "Redis account"
         }
       }
     },
@@ -1053,10 +1033,10 @@
       "type": "n8n-nodes-base.limit",
       "typeVersion": 1,
       "position": [
-        4800,
-        180
+        4820,
+        220
       ],
-      "id": "89f5529b-fab3-4d85-bc13-685cdb5883fc",
+      "id": "f2227a27-5516-4693-b15c-86e72836fc34",
       "name": "Limit"
     },
     {
@@ -1073,14 +1053,34 @@
         },
         "options": {}
       },
-      "id": "09d51f20-5bfe-4466-89db-5c69f0502ef8",
+      "id": "e11622d1-50b6-4fb0-82f2-ec38051f89f5",
       "name": "TEXT",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        3600,
-        220
+        3620,
+        260
       ]
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "=Messages.{{ $json?.id || 'test' }}.{{ $('Webhook').item.json.body.data.key.remoteJid }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryRedisChat",
+      "typeVersion": 1.4,
+      "position": [
+        3300,
+        600
+      ],
+      "id": "e99d84a1-3c5a-48d9-b392-b035b8d8f36d",
+      "name": "Redis Chat Memory",
+      "credentials": {
+        "redis": {
+          "id": "n24hl3tD2xCZuUk7",
+          "name": "Redis account"
+        }
+      }
     }
   ],
   "pinData": {
@@ -1088,56 +1088,90 @@
       {
         "json": {
           "headers": {
-            "host": "n8n.automatiza-ai.com",
-            "user-agent": "axios/1.6.8",
-            "content-length": "841",
-            "accept": "application/json, text/plain, */*",
-            "accept-encoding": "gzip, compress, deflate, br",
+            "host": "n8n-zrbr.onrender.com",
+            "user-agent": "axios/1.7.7",
+            "content-length": "9241",
+            "accept-encoding": "gzip, br",
+            "cdn-loop": "cloudflare; loops=1",
+            "cf-connecting-ip": "170.247.37.34",
+            "cf-ipcountry": "BR",
+            "cf-ray": "9227f0455b12f262-GRU",
+            "cf-visitor": "{\"scheme\":\"https\"}",
             "content-type": "application/json",
-            "x-forwarded-for": "92.118.56.179",
-            "x-forwarded-host": "n8n.automatiza-ai.com",
-            "x-forwarded-port": "443",
+            "render-proxy-ttl": "4",
+            "rndr-id": "f85a6a32-ba88-4ce8",
+            "true-client-ip": "170.247.37.34",
+            "x-forwarded-for": "170.247.37.34, 172.69.11.158, 10.214.76.1",
             "x-forwarded-proto": "https",
-            "x-forwarded-server": "4f2a6e9e22b9",
-            "x-real-ip": "92.118.56.179"
+            "x-request-start": "1742334552403499"
           },
           "params": {},
           "query": {},
           "body": {
             "event": "messages.upsert",
-            "instance": "business",
+            "instance": "development",
             "data": {
               "key": {
-                "remoteJid": "5519992510632@s.whatsapp.net",
+                "remoteJid": "5513991891567@s.whatsapp.net",
                 "fromMe": false,
-                "id": "3AC589F6C48BCFDCACB9"
+                "id": "3EB0D85D70A53C4A02A713"
               },
-              "pushName": "Eduardo Carezia",
+              "pushName": "Anderson Duarte",
               "message": {
-                "conversation": "aaa",
+                "audioMessage": {
+                  "url": "https://mmg.whatsapp.net/v/t62.7117-24/32474909_628737973474160_1485569084254740078_n.enc?ccb=11-4&oh=01_Q5AaISXHa2cWHxEGsYslyiY1az8kNYYEOCuPCjWRY1EWV4ia&oe=680152D9&_nc_sid=5e03e0&mms3=true",
+                  "mimetype": "audio/ogg; codecs=opus",
+                  "fileSha256": "DfTnndcfFb1fmuoo6h2kpS7WWrzMO6uzoDVH6emoO0A=",
+                  "fileLength": "5431",
+                  "seconds": 2,
+                  "ptt": false,
+                  "mediaKey": "RMn4O66Bis/88NASQbL3PSQ7PWtBZ23vUrwnlOtmwO0=",
+                  "fileEncSha256": "BGSBxrCgeU1+u/QGZDb19BFrlrPvCShUpQaJ8Im+wUI=",
+                  "directPath": "/v/t62.7117-24/32474909_628737973474160_1485569084254740078_n.enc?ccb=11-4&oh=01_Q5AaISXHa2cWHxEGsYslyiY1az8kNYYEOCuPCjWRY1EWV4ia&oe=680152D9&_nc_sid=5e03e0",
+                  "mediaKeyTimestamp": "1742334521",
+                  "contextInfo": {
+                    "expiration": 86400,
+                    "ephemeralSettingTimestamp": "1685799",
+                    "disappearingMode": {
+                      "initiator": "INITIATED_BY_ME"
+                    }
+                  },
+                  "waveform": "AAAAAAAAAAAAAAAAAAAnUFpEUjJHX1tUVFVVVE0yL0VVWVhNUVRWVUkaOD49Pj4rJBYQEAAAAAAAAAAAAAAAAA==",
+                  "viewOnce": false
+                },
                 "messageContextInfo": {
                   "deviceListMetadata": {
-                    "senderKeyHash": "oI55ghwqtoZf9A==",
-                    "senderTimestamp": "1730914702",
-                    "recipientKeyHash": "1NRZGvSNnJvFKg==",
-                    "recipientTimestamp": "1733800488"
+                    "senderKeyHash": "OmA0GvlEVP6jMQ==",
+                    "senderTimestamp": "1742140954",
+                    "senderAccountType": "E2EE",
+                    "receiverAccountType": "E2EE",
+                    "recipientKeyHash": "b7fuRHALIkn6Jg==",
+                    "recipientTimestamp": "1742262837"
                   },
                   "deviceListMetadataVersion": 2,
-                  "messageSecret": "2OIiT9BSsSeK/wwyv15ynVl/Xi19VXPbIHwLbV0K80Q="
+                  "messageSecret": "kbcV2iLwSESaI/ODrQbUJT5w7qwugXTfGBUhTFVNDPk="
+                },
+                "base64": "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"
+              },
+              "contextInfo": {
+                "expiration": 86400,
+                "ephemeralSettingTimestamp": "1685799",
+                "disappearingMode": {
+                  "initiator": "INITIATED_BY_ME"
                 }
               },
-              "messageType": "conversation",
-              "messageTimestamp": 1735680974,
-              "owner": "business",
-              "source": "ios"
+              "messageType": "audioMessage",
+              "messageTimestamp": 1742334551,
+              "instanceId": "2523c3eb-a483-4fdd-810c-86fef34587ed",
+              "source": "web"
             },
-            "destination": "https://n8n.automatiza-ai.com/webhook-test/4a826df4-1f5a-4c29-97eb-0879c751c681",
-            "date_time": "2024-12-31T18:36:14.718Z",
-            "sender": "5519994670981@s.whatsapp.net",
-            "server_url": "https://wapi.automatiza-ai.cloud",
-            "apikey": "blthlo5l6ql4ijk7ixl1tk"
+            "destination": "https://n8n-zrbr.onrender.com/webhook-test/4a826df4-1f5a-4c29-97eb-0879c751c681",
+            "date_time": "2025-03-18T18:49:11.875Z",
+            "sender": "5513991274172@s.whatsapp.net",
+            "server_url": "https://7909-170-247-37-34.ngrok-free.app",
+            "apikey": "90D8B642E7A1-4447-A9FA-8CB1D64283DB"
           },
-          "webhookUrl": "https://api.automatiza-ai.com/webhook-test/4a826df4-1f5a-4c29-97eb-0879c751c681",
+          "webhookUrl": "http://localhost:5678/webhook-test/4a826df4-1f5a-4c29-97eb-0879c751c681",
           "executionMode": "test"
         }
       }
@@ -1327,11 +1361,6 @@
         ]
       ]
     },
-    "STOP AND SET TIMEOUT": {
-      "main": [
-        []
-      ]
-    },
     "GET TIMEOUT1": {
       "main": [
         [
@@ -1351,8 +1380,7 @@
             "type": "main",
             "index": 0
           }
-        ],
-        []
+        ]
       ]
     },
     "If3": {
@@ -1451,17 +1479,6 @@
           {
             "node": "SET AUDIO MESSAGE",
             "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Postgres Chat Memory": {
-      "ai_memory": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "ai_memory",
             "index": 0
           }
         ]
@@ -1609,24 +1626,28 @@
           }
         ]
       ]
+    },
+    "Redis Chat Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": false,
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "8988dad3-a69a-4e1f-82b0-72b27d9436b8",
+  "versionId": "869e55dc-9439-40f0-9f20-60bf94128130",
   "meta": {
     "templateCredsSetupCompleted": true,
-    "instanceId": "195348de21beb417a62c89f50b12c9905f5f2ab4604adacb43be768c63bb3e33"
+    "instanceId": "77e34de6822edfc4abe36e60e3eea4261def0daa1e3ec3c1ccb7f9f13fffa273"
   },
-  "id": "xH2S56sNcKO6AQMD",
-  "tags": [
-    {
-      "createdAt": "2024-12-31T22:46:06.635Z",
-      "updatedAt": "2024-12-31T22:46:06.635Z",
-      "id": "l0OJIDcCHFPg4KUu",
-      "name": "LOGIC"
-    }
-  ]
+  "id": "oLQ69px6QEDSxQDy",
+  "tags": []
 }
