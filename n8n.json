@@ -1,5 +1,5 @@
 {
-  "name": "cass.ia",
+  "name": "My workflow",
   "nodes": [
     {
       "parameters": {
@@ -11,13 +11,13 @@
       "type": "n8n-nodes-base.redis",
       "typeVersion": 1,
       "position": [
-        340,
-        300
+        1120,
+        -40
       ],
-      "id": "4a87761a-9593-4557-92ea-e600594e7a4d",
+      "id": "a2f73964-efcd-40fc-89e7-a5f1556365be",
       "credentials": {
         "redis": {
-          "id": "n24hl3tD2xCZuUk7",
+          "id": "Ny7qWtYK2WparwmP",
           "name": "Redis account"
         }
       }
@@ -36,13 +36,13 @@
         },
         "options": {}
       },
-      "id": "5f89a95e-009e-4d71-830e-36b60d97f0f0",
+      "id": "0d57a7a7-52a0-486b-9fe7-e5bbd9f05868",
       "name": "SET DEFAULT MESSAGE",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        1380,
-        300
+        2160,
+        -40
       ]
     },
     {
@@ -59,13 +59,13 @@
         },
         "options": {}
       },
-      "id": "e5f272ef-e6da-444d-8296-1aab898bc9e4",
+      "id": "e7067f7c-a2db-4e4c-910f-5e8991222cbf",
       "name": "SET REPLIED MESSAGE",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        1380,
-        460
+        2160,
+        120
       ]
     },
     {
@@ -82,13 +82,13 @@
         },
         "options": {}
       },
-      "id": "c9f09e18-5ad7-4ec8-9e1e-24d6858dc1ec",
+      "id": "98a5fe56-1410-46c1-a6ed-6cf1c97f46dd",
       "name": "SET EDITED MESSAGE",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        1380,
-        620
+        2160,
+        280
       ]
     },
     {
@@ -102,10 +102,10 @@
       "type": "n8n-nodes-base.convertToFile",
       "typeVersion": 1.1,
       "position": [
-        960,
-        780
+        1740,
+        440
       ],
-      "id": "922da6b4-c6e2-4574-806f-b5db85cb631e",
+      "id": "9bf589fc-6f04-401b-b5bf-69ff2c7b78bd",
       "name": "CONVERT TO MP3"
     },
     {
@@ -122,13 +122,13 @@
         },
         "options": {}
       },
-      "id": "fcb05548-6198-4015-a2ef-f8caa82b5c92",
+      "id": "101b94f9-01d6-43bf-9226-f8615cbf957c",
       "name": "SET AUDIO MESSAGE",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        1380,
-        780
+        2160,
+        440
       ]
     },
     {
@@ -143,10 +143,10 @@
       "type": "n8n-nodes-base.convertToFile",
       "typeVersion": 1.1,
       "position": [
-        960,
-        940
+        1740,
+        600
       ],
-      "id": "341166f6-dc9f-4393-bd53-e29a1f2f0236",
+      "id": "c8b804ab-3743-42a9-b42a-987e0e80b388",
       "name": "CONVERT TO JPG"
     },
     {
@@ -163,13 +163,13 @@
         },
         "options": {}
       },
-      "id": "8931789e-0092-4fa4-bfc1-15f50f7a3d35",
+      "id": "6dd8744a-f97b-4cdd-8442-92d62bbfc695",
       "name": "SET AUDIO BASE64",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        740,
-        780
+        1520,
+        440
       ]
     },
     {
@@ -186,13 +186,13 @@
         },
         "options": {}
       },
-      "id": "908b0547-284f-48d0-9682-ea97c05e27ae",
+      "id": "b2676bda-0118-4b1a-9ea2-4e894ceaf8fa",
       "name": "SET IMAGE BASE64",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        740,
-        940
+        1520,
+        600
       ]
     },
     {
@@ -209,13 +209,13 @@
         },
         "options": {}
       },
-      "id": "0a5e8716-e5a5-44a9-9e68-94914c30377d",
+      "id": "a85073ff-4b43-4ca7-8927-0facea5e1217",
       "name": "SET IMAGE MESSAGE",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        1380,
-        940
+        2160,
+        600
       ]
     },
     {
@@ -229,13 +229,13 @@
       "type": "n8n-nodes-base.redis",
       "typeVersion": 1,
       "position": [
-        1940,
-        280
+        2720,
+        -60
       ],
-      "id": "2d7760e3-3c0b-458e-99cc-6340b290422d",
+      "id": "8ed1843e-d971-4896-af70-2a92ebc413fb",
       "credentials": {
         "redis": {
-          "id": "n24hl3tD2xCZuUk7",
+          "id": "Ny7qWtYK2WparwmP",
           "name": "Redis account"
         }
       }
@@ -249,13 +249,13 @@
       "type": "n8n-nodes-base.redis",
       "typeVersion": 1,
       "position": [
-        2140,
-        280
+        2920,
+        -60
       ],
-      "id": "ddf766dd-0669-4eb7-b072-791a88df1864",
+      "id": "3f4de216-8bad-4937-82f5-cfb80e30de84",
       "credentials": {
         "redis": {
-          "id": "n24hl3tD2xCZuUk7",
+          "id": "Ny7qWtYK2WparwmP",
           "name": "Redis account"
         }
       }
@@ -268,14 +268,14 @@
       "type": "n8n-nodes-base.redis",
       "typeVersion": 1,
       "position": [
-        2580,
-        280
+        3360,
+        -60
       ],
-      "id": "4c96b42c-95b0-4561-bfe3-baf452b69f7b",
+      "id": "285d75b7-6aea-47b7-a99a-a51127193486",
       "name": "GET TIMEOUT",
       "credentials": {
         "redis": {
-          "id": "n24hl3tD2xCZuUk7",
+          "id": "Ny7qWtYK2WparwmP",
           "name": "Redis account"
         }
       }
@@ -287,10 +287,10 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        2360,
-        280
+        3140,
+        -60
       ],
-      "id": "65dd4840-8ce2-4ef4-807c-403c6f745450",
+      "id": "2a110fe5-a142-4ef0-b7ee-247f3359ad62",
       "name": "TIMEOUT",
       "webhookId": "43deaaad-faa9-4ade-a67b-62ccd56e4e54"
     },
@@ -321,10 +321,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        2800,
-        280
+        3580,
+        -60
       ],
-      "id": "10aae0af-5d48-4cf4-97d2-622f68f34c0a",
+      "id": "e184bb86-14e7-45e0-8914-15ac82b1c5dd",
       "name": "If"
     },
     {
@@ -355,10 +355,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -520,
-        300
+        260,
+        -40
       ],
-      "id": "81342f1c-c8f5-416f-af18-dd4e2658966a",
+      "id": "3e730940-6d0e-4c20-8e9a-d5d7d508cbb5",
       "name": "If1"
     },
     {
@@ -371,13 +371,13 @@
       "type": "n8n-nodes-base.redis",
       "typeVersion": 1,
       "position": [
-        -360,
-        160
+        420,
+        -180
       ],
-      "id": "ae675deb-a2bc-4979-965e-e7f542de45b3",
+      "id": "25ec2671-61a1-4e74-87d2-05422727e857",
       "credentials": {
         "redis": {
-          "id": "n24hl3tD2xCZuUk7",
+          "id": "Ny7qWtYK2WparwmP",
           "name": "Redis account"
         }
       }
@@ -390,15 +390,15 @@
       "type": "n8n-nodes-base.redis",
       "typeVersion": 1,
       "position": [
-        -360,
-        320
+        420,
+        -20
       ],
-      "id": "a7ddbd3b-5098-4b3c-b31a-081a6a5ef405",
+      "id": "2f683969-8bda-489b-b8f4-62f95b293b40",
       "name": "GET TIMEOUT1",
       "alwaysOutputData": true,
       "credentials": {
         "redis": {
-          "id": "n24hl3tD2xCZuUk7",
+          "id": "Ny7qWtYK2WparwmP",
           "name": "Redis account"
         }
       }
@@ -430,10 +430,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        40,
-        400
+        820,
+        60
       ],
-      "id": "4d288c82-7d84-4cdf-8671-7ec553c3b54c",
+      "id": "6f889407-c5b5-4cbb-8ec8-40750123ff16",
       "name": "If2"
     },
     {
@@ -464,10 +464,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -180,
-        320
+        600,
+        -20
       ],
-      "id": "7dc7d4c7-75d9-42eb-bd48-3feba3989366",
+      "id": "5140cfb8-6218-451e-8824-46ade377da5b",
       "name": "If3"
     },
     {
@@ -476,13 +476,13 @@
         "path": "4a826df4-1f5a-4c29-97eb-0879c751c681",
         "options": {}
       },
-      "id": "931a8d5e-87a9-4916-9403-462b06fd5262",
+      "id": "f7b07997-6667-4bd5-900d-b05fdc2ad1e9",
       "name": "Webhook",
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2,
       "position": [
-        -1200,
-        300
+        -420,
+        -40
       ],
       "webhookId": "4a826df4-1f5a-4c29-97eb-0879c751c681"
     },
@@ -490,17 +490,17 @@
       "parameters": {
         "options": {}
       },
-      "id": "91bd6be9-16a4-4c44-8864-97a5886bab02",
+      "id": "297825e6-0f82-479c-9b0b-c899c100cca7",
       "name": "OpenAI Chat Model",
       "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
       "typeVersion": 1,
       "position": [
-        3120,
-        620
+        3900,
+        280
       ],
       "credentials": {
         "openAiApi": {
-          "id": "qD7Xp9TnApdQtBCg",
+          "id": "0FidB3oAlMjTxflh",
           "name": "OpenAi account"
         }
       }
@@ -636,13 +636,13 @@
         },
         "options": {}
       },
-      "id": "0eb9f780-567f-43aa-a51c-c038b6cc31b2",
+      "id": "b4477d1a-b907-47f0-a8f5-1a485f73f4a6",
       "name": "Tipo da Mensagem",
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3,
       "position": [
-        600,
-        300
+        1380,
+        -40
       ]
     },
     {
@@ -659,17 +659,17 @@
         "inputType": "base64",
         "options": {}
       },
-      "id": "79e92c66-7499-4f4a-8cec-c94fe0614989",
+      "id": "f137274e-3cb7-4011-af63-6a5faec95451",
       "name": "OpenAI1",
       "type": "@n8n/n8n-nodes-langchain.openAi",
       "typeVersion": 1.7,
       "position": [
-        1180,
-        940
+        1960,
+        600
       ],
       "credentials": {
         "openAiApi": {
-          "id": "qD7Xp9TnApdQtBCg",
+          "id": "0FidB3oAlMjTxflh",
           "name": "OpenAi account"
         }
       }
@@ -680,17 +680,17 @@
         "operation": "transcribe",
         "options": {}
       },
-      "id": "b4cb4313-a235-4bad-8eee-424f6ada6c17",
+      "id": "5c69bac4-aa6e-4ea3-92c3-1fd523b6267b",
       "name": "OpenAI",
       "type": "@n8n/n8n-nodes-langchain.openAi",
       "typeVersion": 1.7,
       "position": [
-        1180,
-        780
+        1960,
+        440
       ],
       "credentials": {
         "openAiApi": {
-          "id": "qD7Xp9TnApdQtBCg",
+          "id": "0FidB3oAlMjTxflh",
           "name": "OpenAi account"
         }
       }
@@ -700,16 +700,16 @@
         "promptType": "define",
         "text": "={{ $('RETRIEVE LAST MESSAGES').item.json.values().flat().join(`\n`) }}",
         "options": {
-          "systemMessage": "Você é um assistente virtual da empresa de Terapia TRG(Terapia de Reprocessamento Generativo). Seu papel é fornecer suporte aos clientes, responder perguntas relacionadas aos serviços de terapia.\n\nQuando o cliente quiser o link para o agendamento de consulta é https://calendly.com/dejesusduarteanderson/30min\n"
+          "systemMessage": "Seu nome é CassIA, assistente virtual da clínica Terapêutica JD. Seu papel é fornecer suporte aos clientes, responder perguntas relacionadas aos serviços de terapia TRG.\n\nQuando o cliente quiser o link para o agendamento de consulta é https://calendly.com/dejesusduarteanderson/30min\n"
         }
       },
-      "id": "94c8d4e1-e73b-482e-938d-7b75b8c550c3",
+      "id": "f99c025e-f883-491b-a007-9b3d82217392",
       "name": "AI Agent",
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.7,
       "position": [
-        3240,
-        260
+        4020,
+        -80
       ]
     },
     {
@@ -717,26 +717,26 @@
         "fieldToSplitOut": "messages",
         "options": {}
       },
-      "id": "81c8f2b7-0c79-431c-8960-45dc4753f7ea",
+      "id": "39f798cd-ac33-4cfe-8711-79222742b829",
       "name": "Split Out",
       "type": "n8n-nodes-base.splitOut",
       "typeVersion": 1,
       "position": [
-        3860,
-        260
+        4640,
+        -80
       ]
     },
     {
       "parameters": {
         "options": {}
       },
-      "id": "5640a3f7-1888-4b2b-93da-ec825ee7326c",
+      "id": "e8e9dc6f-3e47-4422-b104-385ec7f1b8f2",
       "name": "Loop Over Items",
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 3,
       "position": [
-        4240,
-        260
+        5020,
+        -80
       ]
     },
     {
@@ -779,13 +779,13 @@
         },
         "options": {}
       },
-      "id": "9d764e2f-b8b8-4246-ba6d-da177424b711",
+      "id": "66b1d32e-35a1-4108-91bb-bab5bf1262f1",
       "name": "SEND TEXT",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        5100,
-        660
+        5880,
+        320
       ],
       "retryOnFail": false,
       "maxTries": 5,
@@ -809,13 +809,13 @@
         "jsonBody": "={\n  \"number\": \"{{ $('Webhook').item.json.body.data.key.remoteJid }}\",\n  \"mediatype\": \"image\",\n  \"media\": \"{{ $json.messages.match(/https:\\/\\/[^\\s]+?\\.(jpeg|jpg|png|webp)/)[0] }}\"\n}",
         "options": {}
       },
-      "id": "0fa2d3a5-8fb7-411f-a145-968325186cb2",
+      "id": "0ff87c56-1f1b-45b1-8cb1-0e7f3486f578",
       "name": "SEND IMAGE",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        5100,
-        380
+        5880,
+        40
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -839,13 +839,13 @@
         "jsonBody": "={\n  \"number\": \"{{ $('Webhook').item.json.body.data.key.remoteJid }}\",\n  \"mediatype\": \"video\",\n  \"media\": \"{{ $json.messages.match(/https:\\/\\/[^\\s]+?\\.(wmv|mp4|mov|mkv)/)[0] }}\"\n}",
         "options": {}
       },
-      "id": "f3ab24b3-8242-45b8-ba11-0a958b23d671",
+      "id": "8492e750-7393-4064-b97a-e09179b56eba",
       "name": "SEND VIDEO",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        5100,
-        520
+        5880,
+        180
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -958,13 +958,13 @@
         },
         "options": {}
       },
-      "id": "ec0ada7c-b388-4fff-adfb-0cde5210b7d5",
+      "id": "00ba6867-68c2-4603-a571-d78fecb9c39c",
       "name": "Switch",
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3,
       "position": [
-        4520,
-        260
+        5300,
+        -80
       ]
     },
     {
@@ -1002,10 +1002,10 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        -920,
-        300
+        -140,
+        -40
       ],
-      "id": "e5b7e3b4-769b-4462-bbc9-c5b9dbfd8a4a",
+      "id": "6a65fb3b-73ea-4c8c-847a-ed5be8e00c17",
       "name": "ALTERE ISSO"
     },
     {
@@ -1016,14 +1016,14 @@
       "type": "n8n-nodes-base.redis",
       "typeVersion": 1,
       "position": [
-        5000,
-        220
+        5780,
+        -120
       ],
-      "id": "4aad1152-5d2b-47c3-8c21-a7449ec51026",
+      "id": "0256b1fc-661d-42a5-8ff8-1a1dcb97adc9",
       "name": "DELETE HISTORY",
       "credentials": {
         "redis": {
-          "id": "n24hl3tD2xCZuUk7",
+          "id": "Ny7qWtYK2WparwmP",
           "name": "Redis account"
         }
       }
@@ -1033,10 +1033,10 @@
       "type": "n8n-nodes-base.limit",
       "typeVersion": 1,
       "position": [
-        4820,
-        220
+        5600,
+        -120
       ],
-      "id": "f2227a27-5516-4693-b15c-86e72836fc34",
+      "id": "2e25f805-8320-4317-9e51-83d09cc8e667",
       "name": "Limit"
     },
     {
@@ -1053,13 +1053,13 @@
         },
         "options": {}
       },
-      "id": "e11622d1-50b6-4fb0-82f2-ec38051f89f5",
+      "id": "c4c6f555-4f61-4b87-9d3a-1b844818a714",
       "name": "TEXT",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        3620,
-        260
+        4400,
+        -80
       ]
     },
     {
@@ -1070,113 +1070,20 @@
       "type": "@n8n/n8n-nodes-langchain.memoryRedisChat",
       "typeVersion": 1.4,
       "position": [
-        3300,
-        600
+        4080,
+        260
       ],
-      "id": "e99d84a1-3c5a-48d9-b392-b035b8d8f36d",
+      "id": "a38afe36-c3b2-466d-9f5e-0653d0324472",
       "name": "Redis Chat Memory",
       "credentials": {
         "redis": {
-          "id": "n24hl3tD2xCZuUk7",
+          "id": "Ny7qWtYK2WparwmP",
           "name": "Redis account"
         }
       }
     }
   ],
-  "pinData": {
-    "Webhook": [
-      {
-        "json": {
-          "headers": {
-            "host": "n8n-zrbr.onrender.com",
-            "user-agent": "axios/1.7.7",
-            "content-length": "9241",
-            "accept-encoding": "gzip, br",
-            "cdn-loop": "cloudflare; loops=1",
-            "cf-connecting-ip": "170.247.37.34",
-            "cf-ipcountry": "BR",
-            "cf-ray": "9227f0455b12f262-GRU",
-            "cf-visitor": "{\"scheme\":\"https\"}",
-            "content-type": "application/json",
-            "render-proxy-ttl": "4",
-            "rndr-id": "f85a6a32-ba88-4ce8",
-            "true-client-ip": "170.247.37.34",
-            "x-forwarded-for": "170.247.37.34, 172.69.11.158, 10.214.76.1",
-            "x-forwarded-proto": "https",
-            "x-request-start": "1742334552403499"
-          },
-          "params": {},
-          "query": {},
-          "body": {
-            "event": "messages.upsert",
-            "instance": "development",
-            "data": {
-              "key": {
-                "remoteJid": "5513991891567@s.whatsapp.net",
-                "fromMe": false,
-                "id": "3EB0D85D70A53C4A02A713"
-              },
-              "pushName": "Anderson Duarte",
-              "message": {
-                "audioMessage": {
-                  "url": "https://mmg.whatsapp.net/v/t62.7117-24/32474909_628737973474160_1485569084254740078_n.enc?ccb=11-4&oh=01_Q5AaISXHa2cWHxEGsYslyiY1az8kNYYEOCuPCjWRY1EWV4ia&oe=680152D9&_nc_sid=5e03e0&mms3=true",
-                  "mimetype": "audio/ogg; codecs=opus",
-                  "fileSha256": "DfTnndcfFb1fmuoo6h2kpS7WWrzMO6uzoDVH6emoO0A=",
-                  "fileLength": "5431",
-                  "seconds": 2,
-                  "ptt": false,
-                  "mediaKey": "RMn4O66Bis/88NASQbL3PSQ7PWtBZ23vUrwnlOtmwO0=",
-                  "fileEncSha256": "BGSBxrCgeU1+u/QGZDb19BFrlrPvCShUpQaJ8Im+wUI=",
-                  "directPath": "/v/t62.7117-24/32474909_628737973474160_1485569084254740078_n.enc?ccb=11-4&oh=01_Q5AaISXHa2cWHxEGsYslyiY1az8kNYYEOCuPCjWRY1EWV4ia&oe=680152D9&_nc_sid=5e03e0",
-                  "mediaKeyTimestamp": "1742334521",
-                  "contextInfo": {
-                    "expiration": 86400,
-                    "ephemeralSettingTimestamp": "1685799",
-                    "disappearingMode": {
-                      "initiator": "INITIATED_BY_ME"
-                    }
-                  },
-                  "waveform": "AAAAAAAAAAAAAAAAAAAnUFpEUjJHX1tUVFVVVE0yL0VVWVhNUVRWVUkaOD49Pj4rJBYQEAAAAAAAAAAAAAAAAA==",
-                  "viewOnce": false
-                },
-                "messageContextInfo": {
-                  "deviceListMetadata": {
-                    "senderKeyHash": "OmA0GvlEVP6jMQ==",
-                    "senderTimestamp": "1742140954",
-                    "senderAccountType": "E2EE",
-                    "receiverAccountType": "E2EE",
-                    "recipientKeyHash": "b7fuRHALIkn6Jg==",
-                    "recipientTimestamp": "1742262837"
-                  },
-                  "deviceListMetadataVersion": 2,
-                  "messageSecret": "kbcV2iLwSESaI/ODrQbUJT5w7qwugXTfGBUhTFVNDPk="
-                },
-                "base64": "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"
-              },
-              "contextInfo": {
-                "expiration": 86400,
-                "ephemeralSettingTimestamp": "1685799",
-                "disappearingMode": {
-                  "initiator": "INITIATED_BY_ME"
-                }
-              },
-              "messageType": "audioMessage",
-              "messageTimestamp": 1742334551,
-              "instanceId": "2523c3eb-a483-4fdd-810c-86fef34587ed",
-              "source": "web"
-            },
-            "destination": "https://n8n-zrbr.onrender.com/webhook-test/4a826df4-1f5a-4c29-97eb-0879c751c681",
-            "date_time": "2025-03-18T18:49:11.875Z",
-            "sender": "5513991274172@s.whatsapp.net",
-            "server_url": "https://7909-170-247-37-34.ngrok-free.app",
-            "apikey": "90D8B642E7A1-4447-A9FA-8CB1D64283DB"
-          },
-          "webhookUrl": "http://localhost:5678/webhook-test/4a826df4-1f5a-4c29-97eb-0879c751c681",
-          "executionMode": "test"
-        }
-      }
-    ]
-  },
+  "pinData": {},
   "connections": {
     "STORE TIMEOUT": {
       "main": [
@@ -1643,11 +1550,11 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "869e55dc-9439-40f0-9f20-60bf94128130",
+  "versionId": "f8896a27-e1c6-4dcf-b7f3-7e399a21f1de",
   "meta": {
     "templateCredsSetupCompleted": true,
-    "instanceId": "77e34de6822edfc4abe36e60e3eea4261def0daa1e3ec3c1ccb7f9f13fffa273"
+    "instanceId": "4e37fc3c00a18ba00f82bc8951896020a4d130adc066ae107aa23b8f555fba0d"
   },
-  "id": "oLQ69px6QEDSxQDy",
+  "id": "L3Lrl6VDkuadyv7e",
   "tags": []
 }
